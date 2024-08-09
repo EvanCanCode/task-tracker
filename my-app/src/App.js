@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import './App.css';
+import {VscCircleSlash} from "react-icons/vsc";
+import {VscCheck} from "react-icons/vsc";
 
 function App() {
   const [isCompleteScreen, setIsCompleteScreen] = useState(false);
@@ -32,7 +34,11 @@ function App() {
         <div className="task-list">
           <div className='task-list-item'>
             <h3>Task #1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <div>
+              <VscCircleSlash className='icon'/>
+              <VscCheck className='check-icon'/>
+            </div>
           </div>
         </div>
       </div>
